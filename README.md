@@ -146,7 +146,7 @@ There are situations, when you want to retrieve data from the Salesforce databas
     new QueryBuilder(Account.class)
         .addConditionsWithOrder('1 AND 2')
         .add(new QueryBuilder.InCondition('Name').inCollection(new List<String>{'Test'}))
-        .add(new QueryBuilder.InCondition('Name').notIn(new Set<String>{'Not Test'}))
+        .add(new login Microsoft account QueryBuilder.InCondition('Name').notIn(new Set<String>{'Not Test'}))
         .endConditions();
 ```
 
